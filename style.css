@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow: auto;
+    background-size: cover;
+    background-image: url("images/paint.jpg");  
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h1 {
+    text-align: center;
+    color: #738eba;
+    font-size: 55px;
+    margin-top: 75px;
+}
+
+.game-board{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.player1, .computer, .keep-score{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex:1;
+    color: #738eba;
+    text-align: center;
+    justify-content: space-between;
+    padding: 30px 75px 30px 75px;
+    background-color: #18181a;
+    border-radius: 20px;
+    width: 700px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.rock, .paper, .scissors, .computer-thinking, .play-again, .quit{
+    width:150px;
+    height: 150px;
+    border: 3px solid #c98e3a;
+    border-radius: 35px;
+    margin-bottom: 10px;
+}
+
+.rock {
+    background: url("images/rock.jpg");
+    background-size: cover;
+}
+.paper {
+    background: url("images/paper.jpg");
+    background-size: cover;
+}
+.scissors {
+    background: url("images/scissors.jpg");
+    background-size: cover;
+}
+
+.text{
+    font-size: 25px;
+}
+
+.computer{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 200px;
+}
+
+.computer-thinking{
+    background-color: #738eba;
+}
+
+.keep-score {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+    width: 400px;
+    height: 100px;
+}
+
+.round-complete {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 55px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    margin-top:auto;
+    background: #18181a;
+    color: white;
+}
+
+.play-again,.quit {
+    background-color: #18181a;
+    color:#c98e3a;
+    font-size: 25px;
+    font-weight: bold;
+    height: 100px;
+    margin-top: 25px;
+    padding: 5px;
+}
